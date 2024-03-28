@@ -1,0 +1,466 @@
+<<<<<<< HEAD
+@font-face {
+    font-family: "Boska Light";
+    src: url(./assets/fonts/Boska/fonts/Boska-Variable.ttf);
+    font-weight: 200;
+
+}
+
+
+@font-face {
+    font-family: "Clash";
+    src: url(./assets/fonts/Clash\ Grotesk/fonts/ClashGrotesk-Regular.ttf);
+
+}
+
+@font-face {
+    font-family: "Clash Bold";
+    src: url(./assets/fonts/Clash\ Grotesk/fonts/ClashGrotesk-Bold.ttf);
+
+}
+
+body {
+    font-family: "Boska Light";
+    overflow-x: hidden;
+}
+
+body.dark {
+    background-color: #101010;
+    color:#afafaf;
+    transition:.5s;
+}
+
+
+body.dark .number {
+    color:#2A2A2A;
+}
+
+body.dark a {
+    color:#afafaf;
+}
+
+body.dark button {
+    background-color: #101010;
+    color:#AFAFAF;
+    transition:1s;
+}
+
+body.dark button:hover{
+    background-color: #AFAFAF;
+    color:#101010;
+
+}
+
+body.light {
+    background-color: #fefefe;
+    color:#2A2A2A;
+    transition:1s;
+
+}
+
+body.light .number {
+    color:#e7e7e7;
+    transition:.5s;
+
+}
+
+body.light a {
+    color:#2a2a2a;
+}
+
+body.light button{
+    background-color: #fefefe;
+    color:#2a2a2a;
+    transition:1s;
+}
+
+body.light button:hover{
+    background-color: #2a2a2a;
+    color:#fefefe;
+
+}
+
+p {
+    font-family: "Boska Light";
+    /* color: #AFAFAF; */
+}
+
+.desc {
+    /* color: #AFAFAF; */
+}
+
+.number {
+    /* color: #2A2A2A; */
+}
+
+.section {
+    width: 100vw;
+    /* border-bottom:1px solid #AFAFAF; */
+
+}
+
+.first, .fourth{
+    height:100vh;
+}
+
+.third {
+    min-height:100vh;
+}
+
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    align-items: space-between;
+    padding: 50px;
+
+}
+
+nav a {
+    /* color: #AFAFAF; */
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 30px;
+
+}
+
+a {
+    /* color:#afafaf; */
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+}
+
+.center {
+    position: relative;
+    top: 45%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.center {
+    margin-bottom: 75px;
+}
+
+.header {
+    font-size: 96px;
+}
+
+p:not(.header) {
+    font-size: 24px;
+}
+
+.first .bodytext {
+    font-size: 36px;
+}
+
+.bodytext {
+    font-family: "Clash";
+
+}
+
+.scroll-down {
+    margin-top:150px;
+
+}
+
+
+
+button {
+    border: none;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    font-size:20px;
+    transition:.5s;
+    text-decoration:none;
+
+}
+
+button:hover{
+    cursor:pointer;
+    transition:.5s;
+
+}
+
+
+.heading {
+    width:100%;
+}
+
+.heading *{
+    display:inline;
+    width:200px;
+    height:200px;
+}
+
+p.number {
+    font-size:350px;
+    /* width:50px;
+    height:50px; */
+   
+}
+
+.left .desc {
+    position:relative;
+    right:10%;
+}
+
+.right .desc {
+    position:relative;
+    left:10%;
+}
+
+
+.fourth .center-contact {
+    margin:0;
+    text-align: center;
+    position:relative;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+
+.fourth {
+    text-align: center;
+
+}
+
+.fourth .center-contact .heading .desc {
+    position:relative;
+    right:10%;
+}
+
+.body-content {
+    margin:0 150px;
+    
+}
+
+.right {
+    text-align: right;
+}
+
+
+.flex 
+{
+    display:flex;
+}
+.flex p {
+    width:50%;
+    font-size:18px;
+    margin-right:100px;
+}
+
+#projectHeader {
+    font-family:"Clash";
+    font-size:48px;
+}
+
+
+
+.projectTitle {
+    font-family:"Clash Bold";
+    text-decoration: underline;
+    font-size:24px;
+}
+
+span {
+    font-family: "Boska Light";
+    font-size:36px;
+}
+
+.inline-text *{
+    display: inline;
+    margin:0 10px;
+    /* color:#afafaf; */
+    text-decoration: none;
+}
+
+.project {
+    margin:20px;
+}
+
+.project-body {
+    margin:0 5px;
+}
+
+#seeMoreProjects 
+{
+    font-size:32px;
+}
+
+.third a {
+    /* font-size:36px; */
+    font-family: "Boska Light";
+
+    transition: text-decoration 1s;
+}
+
+.third a:hover{
+    text-decoration: underline;
+    transition: text-decoration 1s;
+    cursor:pointer;
+}
+
+.project-body p {
+    font-family: "Clash";
+}
+
+.links:hover {
+    cursor:pointer;
+}
+
+.project {
+    width:50%;
+}
+
+.note {
+    font-size:20px;
+}
+=======
+body, html {
+    margin:0;
+    padding:0;
+    background-color:black;
+    /* overflow-y:hidden; */
+    color:white;
+    font-family: "Avenir";
+    font-weight: 300;
+}
+
+.container{
+    width:100%;
+    height:100vh;
+    /* background-color:#000; */
+    
+}
+
+#line1{
+    animation: lines 1s, rotateLines 1s;
+    animation-delay: 0s, 2s, 4s;
+    transform-origin:center;
+    animation-fill-mode: forwards;
+}
+#line2{
+    animation: lines2 1s, rotateLines 1s;
+    animation-delay: 0s, 2s, 4s;
+    transform-origin:center;
+    animation-fill-mode: forwards;
+
+}
+
+.cls-2, .cls-3{
+    visibility:hidden;
+    animation: text 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+
+}
+.p{
+    animation: letterRotation 1s, downscale 1s;
+    animation-delay: 2s, 3s;
+    transform-origin:center;
+    animation-fill-mode: forwards;
+
+}
+.centered{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height:100%;
+
+    display:flex;
+    margin: 0 auto;
+
+    /* margin:auto; */
+    /* background-color: rgb(43, 40, 40); */
+    
+    /* animation: transitionFromIntro 1s ease; 
+    animation-delay: 4s;
+    animation-fill-mode: forwards; */
+
+}
+nav{
+    padding:40px;
+}
+
+/* .loading-page #svg{
+    position:absolute;
+    bottom:50%;
+    /* left:0; */
+    /* right:0; */
+/* } */
+
+@keyframes lines{
+    0% {
+        transform: scale(0);
+    }
+    25%{
+        transform: scale(1);
+    }
+    
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes lines2{
+    0% {
+        transform: scale(0);
+    }
+    25%{
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes text{
+    0% {
+        opacity: 0%;
+    }
+    1%{
+        opacity: 0%;
+        visibility: visible;
+    }
+    100% {
+        opacity: 100%;
+
+        visibility: visible;
+    }
+}
+@keyframes rotateLines {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(90deg);
+    }
+  }
+
+@keyframes letterRotation {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+@keyframes downscale{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
+
+>>>>>>> 5f1ad40 (pushing with linear regression project)
