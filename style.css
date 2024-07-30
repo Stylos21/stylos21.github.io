@@ -13,90 +13,177 @@
 }
 
 @font-face {
+    font-family: "Clash Extralight";
+    src: url(./assets/fonts/Clash\ Grotesk/fonts/ClashGrotesk-Extralight.otf);
+
+}
+
+@font-face {
     font-family: "Clash Bold";
     src: url(./assets/fonts/Clash\ Grotesk/fonts/ClashGrotesk-Bold.ttf);
 
 }
 
+:root {
+    --primary-color: #000c12;
+    --primary-dull-color: #000E16;
+    --secondary-color: #D0C292;
+    --secondary-dull-color: #7D7457;
+    --teritary-color: #A1A1A1;
+    --polkadot-color: var(--secondary-dull-color);
+
+    --primary-bluegold-color: #000c12;
+    --primary-bluegold-dull-color: #000E16;
+    --secondary-bluegold-color: #D0C292;
+    --secondary-bluegold-dull-color: #7D7457;
+    --teritary-bluegold-color: #A1A1A1;
+
+    --primary-sharon-color: #BFC1D6;
+    --primary-sharon-dull-color: #b3b5c9;
+    --secondary-sharon-color: #C50E38;
+    --secondary-sharon-dull-color: #c20833;
+    --teritary-sharon-color: #111111;
+
+    --primary-bw-color: #101010;
+    --primary-bw-dull-color: #1A1A1A;
+    --secondary-bw-color: #AFAFAF;
+    --secondary-bw-dull-color: #818181;
+    --teritary-bw-color: #838383;
+
+    --primary-wb-color: #DEDEDE;
+    --primary-wb-dull-color: #BABABA;
+    --secondary-wb-color: #202020;
+    --secondary-wb-dull-color: #343434;
+    --teritary-wb-color: #333333;
+
+}
+
 body {
+
     font-family: "Boska Light";
     overflow-x: hidden;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    background-image: radial-gradient(var(--polkadot-color) 3.5%, var(--primary-color) 3.5%);
+    background-position: 0 0;
+    background-size: 35px 35px;
+    width: 100%;
+    height: 100%;
 }
 
-body.dark {
-    background-color: #101010;
-    color: #afafaf;
-    transition: .5s;
+nav#navResponsive {
+    /* margin:10px 0; */
+    margin:0;
+    display:none;
+    
+    z-index:999;
 }
 
-
-body.dark .number {
-    color: #2A2A2A;
+.first {
+    z-index:1;
 }
 
-body.dark a {
-    color: #afafaf;
+.navResContainer {
+    width:100%;
+    height:100vh;
+    display:none;
+    position:absolute;
+    left:0;
+    top:0;
+    margin:0 0;
+    padding:0;
 }
 
-body.dark button {
-    background-color: #101010;
-    color: #AFAFAF;
-    transition: 1s;
-}
+.strip {
+    width:20vw;
+    height:100%;
+    margin:0;
 
-body.dark button:hover {
-    background-color: #AFAFAF;
-    color: #101010;
-
-}
-
-body.light {
-    background-color: #fefefe;
-    color: #2A2A2A;
-    transition: 1s;
-
-}
-
-body.light .number {
-    color: #e7e7e7;
-    transition: .5s;
+    background-color: var(--primary-color);
+    border-left:.5px solid black;
+    text-align:center;
 
 }
 
-body.light a {
-    color: #2a2a2a;
+.strip:hover{
+    cursor:pointer;
+    background-color: var(--secondary-color);
+    color:var(--primary-color);
+    transition:.5s;
 }
 
-body.light button {
-    background-color: #fefefe;
-    color: #2a2a2a;
-    transition: 1s;
+.strip-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    top:50%;
+    transform:rotate(270deg);
 }
 
-body.light button:hover {
-    background-color: #2a2a2a;
-    color: #fefefe;
+#navResponsive i {
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    font-size:30px;
+    text-align:center;
+}
 
+#navResponsive i:hover{
+    cursor:pointer;
 }
 
 p {
     font-family: "Boska Light";
+    color: var(--secondary-color);
     /* color: #AFAFAF; */
 }
 
-.desc {
-    /* color: #AFAFAF; */
+p.bodytext {
+    color: var(--teritary-color);
 }
 
-.number {
-    /* color: #2A2A2A; */
+nav {
+    color: var(--secondary-color);
+    padding: 20px 0;
+    margin: 25px 25px;
+    display: flex;
+
 }
+
+a {
+    text-decoration: none;
+}
+
+#nav a {
+    margin: 0px 20px;
+    font-size: 22px;
+}
+
+#nav .right {
+    position: absolute;
+    right: 20px;
+}
+
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.center * {
+    margin: 30px 0px;
+}
+
 
 .section {
     width: 100vw;
-    /* border-bottom:1px solid #AFAFAF; */
-
+    /* border:1px solid black; */
 }
+
 
 .first,
 .fourth {
@@ -108,47 +195,10 @@ p {
 }
 
 
-nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    display: flex;
-    align-items: space-between;
-    padding: 50px;
-
-}
-
-nav a {
-    /* color: #AFAFAF; */
-    text-decoration: none;
-    font-size: 25px;
-    margin-left: 30px;
-
-}
-
-a {
-    /* color:#afafaf; */
-}
-
-.content {
-    width: 100%;
-    height: 100%;
-}
-
-.center {
-    position: relative;
-    top: 45%;
-    transform: translateY(-50%);
-    text-align: center;
-}
-
-.center {
-    margin-bottom: 75px;
-}
 
 .header {
-    font-size: 96px;
+    font-size: 72px;
+    color: var(--secondary-color);
 }
 
 p:not(.header) {
@@ -160,7 +210,7 @@ p:not(.header) {
 }
 
 .bodytext {
-    font-family: "Clash";
+    font-family: "Clash Extralight";
 
 }
 
@@ -169,9 +219,110 @@ p:not(.header) {
 
 }
 
+.circle {
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+
+}
+
+.theme-selection {
+    /* background-color: var(--primary-dull-color); */
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+}
+
+.themes {
+    display: flex;
+
+}
 
 
-button {
+.theme {
+    /* text-align: center; */
+    display: flex;
+    margin: 0 10px;
+    /* padding:5px; */
+    /* border:1px solid var(--primary-color); */
+
+
+    /* text-align: right; */
+}
+
+.theme:hover {
+    cursor:pointer;
+}
+
+.theme p {
+    margin: 0 10px;
+    font-size: 15px;
+
+}
+
+
+/* .theme-selection {
+    display:flex;
+} */
+
+.theme * {
+    text-align: center;
+    /* margin:0 0 5px 0; */
+    /* margin:5px 10px;
+    justify-content: center;
+    align-items: center; */
+}
+
+.blue-gold {
+    border: 3px solid var(--secondary-bluegold-color);
+    background-color: var(--primary-bluegold-color);
+}
+
+.blue-gold:hover {
+    background-color: var(--secondary-bluegold-color);
+    border: 3px solid var(--primary-bluegold-color);
+
+}
+
+
+.red-white {
+    border: 3px solid var(--secondary-sharon-color);
+    background-color: var(--primary-sharon-color);
+}
+
+.red-white:hover {
+    background-color: var(--secondary-sharon-color);
+    border: 3px solid var(--primary-sharon-color);
+
+}
+
+
+.bw {
+    border: 3px solid var(--secondary-bw-color);
+    background-color: var(--primary-bw-color);
+}
+
+.bw:hover {
+    background-color: var(--secondary-bw-color);
+    border: 3px solid var(--primary-bw-color);
+
+}
+
+.wb {
+    border: 3px solid var(--primary-bw-color);
+    background-color: var(--secondary-bw-color);
+}
+
+.wb:hover {
+    background-color: var(--primary-bw-color);
+    border: 3px solid var(--secondary-bw-color);
+
+}
+
+
+
+/* button {
     border: none;
     border-radius: 100%;
     width: 50px;
@@ -180,7 +331,7 @@ button {
     transition: .5s;
     text-decoration: none;
 
-}
+} */
 
 button:hover {
     cursor: pointer;
@@ -201,6 +352,7 @@ button:hover {
 
 p.number {
     font-size: 350px;
+    opacity: 25%;
     /* width:50px;
     height:50px; */
 
@@ -208,12 +360,12 @@ p.number {
 
 .left .desc {
     position: relative;
-    right: 10%;
+    right: 15%;
 }
 
 .right .desc {
     position: relative;
-    left: 10%;
+    left: 15%;
 }
 
 
@@ -250,64 +402,62 @@ p.number {
     display: flex;
 }
 
-.flex p {
+
+.flex-right {
+    position: relative;
+    top: 60%;
+}
+
+
+.second .flex p {
     width: 50%;
     font-size: 18px;
     margin-right: 100px;
 }
 
 #projectHeader {
-    font-family: "Clash";
-    font-size: 48px;
+    font-family: "Clash Extralight";
+    font-size: 40px;
 }
-
-
 
 .projectTitle {
-    font-family: "Clash Bold";
-    text-decoration: underline;
-    font-size: 24px;
-}
-
-span {
     font-family: "Boska Light";
-    font-size: 36px;
+    color: var(--secondary-color);
+    /*    text-decoration: underline;*/
+    font-size: 22px;
 }
 
-.inline-text * {
-    display: inline;
-    margin: 0 10px;
-    /* color:#afafaf; */
-    text-decoration: none;
+p.projectTools,
+p.topic {
+    font-size: 18px;
+    color: var(--secondary-dull-color);
+    font-family: "Clash Extralight";
 }
+
 
 .project {
-    margin: 20px;
-}
-
-.project-body {
-    margin: 0 5px;
-}
-
-#seeMoreProjects {
-    font-size: 32px;
+    margin: 0 20px 20px 0;
+    background-color: var(--primary-dull-color);
+    width: auto;
+    /*    width:fit-content;*/
 }
 
 .third a {
     /* font-size:36px; */
     font-family: "Boska Light";
+    color: var(--secondary-color);
 
     transition: text-decoration 1s;
 }
 
 .third a:hover {
-    text-decoration: underline;
     transition: text-decoration 1s;
     cursor: pointer;
 }
 
 .project-body p {
-    font-family: "Clash";
+    font-family: "Clash Extralight";
+    color: var(--teritary-color);
 }
 
 .links:hover {
@@ -315,9 +465,191 @@ span {
 }
 
 .project {
-    width: 50%;
+    width: 40%;
+    padding: 15px 30px;
+}
+
+p.projectDesc {
+    font-size: 16px;
 }
 
 .note {
     font-size: 20px;
+}
+
+.icon {
+    color: var(--secondary-color);
+}
+/* 
+.hidden {
+    display:none;
+} */
+
+@media only screen and (max-width: 950px)  {
+
+    * {
+        margin:0;
+    }
+    body {
+        overflow-x:hidden;
+    }
+
+
+
+    .header, .desc {
+        margin:0;
+    }
+
+
+
+    .left .header {
+        position:relative;
+        right:0%;
+        left:0%;
+        text-align:center;
+    }
+
+    .right .header {
+        position:relative;
+        right:0%;
+        left:0%;
+        text-align:center;
+    }
+
+
+    .second .bodytext {
+        position:relative;
+        left:25%;
+
+
+    }
+
+    .project {
+        position:relative;
+        left:25%;
+        margin:50px 0;
+
+
+    }
+
+    .project * {
+        margin:5px 0;
+    }
+
+
+    p.projectHeader {
+        text-align:center;
+        font-size:32px;
+    }
+
+    p.projectTitle {
+        font-size:24px;
+    }
+
+    p.projectTools {
+        font-size:16px;
+    }
+
+
+    p.projectDesc {
+        font-size:14px;
+    }
+
+    nav#navResponsive {
+        display:block;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    .body-content {
+        width:100vw;
+        position:relative;
+        left:50%;
+        transform:translateX(-50%);
+        margin:0;
+    }
+
+    .bodytext {
+        text-align: center;
+        margin:0 0 0 0;
+    }
+
+    .flex {
+        display:block;
+        text-align:center;
+    }
+
+    /* .right .desc {
+        position:relative;
+        right:85%;
+    } */
+
+    .second .left {
+        position:relative;
+        left:50%;
+        transform:translateX(-25%);
+    }
+
+    .third .right {
+        position:relative;
+        right:50%;
+        transform:translateX(25%);
+    }
+
+    .header {
+        width:100vw;
+    }
+
+    .heading p.number {
+        font-size:225px;
+    }
+
+    .heading p.desc {
+        font-size:48px;
+    }
+
+    .fourth .body-content * {
+        margin:12.5px 0;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 600px)  {
+
+    .heading p.number {
+        font-size:175px;
+    }
+
+    .heading p.desc {
+        font-size:36px;
+    }
+    p.projectHeader {
+        text-align:center;
+        font-size:28px;
+    }
+
+    p.projectTitle {
+        font-size:20px;
+    }
+
+    p.projectTools {
+        font-size:16px;
+    }
+
+
+    .first .header {
+        font-size:48px;
+    }
+    .first .bodytext {
+        font-size:24px;
+    }
+
+    .fourth .body-content * {
+        margin:25px 0;
+    }
 }
