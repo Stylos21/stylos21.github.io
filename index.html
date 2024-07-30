@@ -16,122 +16,167 @@
 </head>
 
 <body class="dark">
-    <nav id="nav" data-aos="fade-right">
-        <a id="homeLink" class="links">home</a>
-        <a id="aboutLink" class="links">about me</a>
-        <a id="workLink" class="links">work</a>
-        <a id="contactLink" class="links">contact</a>
-        <a><i id="themeChanger" class="fa-solid fa-sun links"></i></a>
+    <nav id="navResponsive" class="hidden" data-aos="fade-right">
+        <i id="navBtn" class="fa-solid fa-bars"></i>
+        <div class="navResContainer">
+            <div class="strip homeLink">
+                <div class="strip-container">
+                    <h1 class="stripHeader">home</h1>
+                </div>
+            </div>
+            <div class="strip aboutLink">
+                <div class="strip-container">
+                    <h1 class="stripHeader">about me</h1>
+                </div>
+
+            </div>
+            <div class="strip workLink">
+                <div class="strip-container">
+                    <h1 class="stripHeader">work</h1>
+                </div>
+
+            </div>
+            <div class="strip contactLink">
+                <div class="strip-container">
+                    <h1 class="stripHeader">contact</h1>
+                </div>
+
+            </div> 
+            <div class="strip">
+                <div class="strip-container">
+                    <h1 class="stripHeader">themes</h1>
+                    <div class="themes">
+                        <div class="theme midnight-champagne">
+                            <div class="res circle blue-gold"></div>
+                        </div>
+                        <div class="theme rose-of-sharon">
+                            <div class="res circle red-white"></div>
+                        </div>
+                        <div class="theme dark">
+                            <div class="res circle bw"></div>
+                        </div>
+                        <div class="theme light">
+                            <div class="res circle wb"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </nav>
     <div class="container">
-
-        <div class="section first" data-aos="fade-up" id="home">
-
+       
+        <div class="section first polka" data-aos="fade-up" id="home">
+            <nav id="nav" data-aos="fade-right">
+                <a class="homeLink links">home</a>
+                <a class="aboutLink links">about me</a>
+                <a class="workLink links">work</a>
+                <a class="contactLink links">contact</a>
+                <div class="theme-selection right">
+                    <a>themes</a>
+                    <div class="themes">
+                        <div class="theme midnight-champagne">
+                            <div class="circle blue-gold"></div>
+                        </div>
+                        <div class="theme rose-of-sharon">
+                            <div class="circle red-white"></div>
+                        </div>
+                        <div class="theme dark">
+                            <div class="circle bw"></div>
+                        </div>
+                        <div class="theme light">
+                            <div class="circle wb"></div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            
             <div class="content">
 
                 <div class="center">
                     <p class="header desc">I'm Joshua Saji</p>
-                    <p class="bodytext ">rising freshman @ uw-madison.</p>
-                    <div class="scroll-down">
-                        <button id="scrollDown">↓</button>
-                        <p>scroll down.</p>
-                    </div>
+                    <p class="bodytext">incoming cs student @ uw madison.</p>
                 </div>
             </div>
         </div>
         <div class="section second" id="about">
             <div class="body-content">
-                <div class="heading grid left" data-aos="fade-right">
+                <div class="heading grid left">
                     <p class="header number">01</p>
                     <p class="header desc">about me.</p>
                 </div>
                 <div class="flex">
-                    <div class="paragraph flex-item">
-
-                    </div>
-                    <p class="bodytext desc flex-item" data-aos="fade-right">Hello! My name is Joshua Saji and I am
-                        currently a high school
-                        senior based in Maryland. For the 2024-2025 academic school year, I will be attending the
-                        University of Wisconsin - Madison as a computer science major. <br><br> My interest in
-                        programming
-                        started when I was just ten years old on ROBLOX. I wanted to learn how to make my own game, and
-                        from there, I downloaded ROBLOX's respective game editor, "ROBLOX Studio". Eight years later, I
-                        have dabbled into numerous fields of computer programming, from video game development, to web
-                        design. </p>
-                    <p class="bodytext desc flex-item" data-aos="fade-left">Right now, I am specifically interested in
-                        deep learning and
-                        artificial intelligence. I have made a few projects incorporating AI models, and I am continuing
-                        to learn more about the mathematics behind the plethora of models in the field. Right now, my
-                        GitHub contains a lot of rudimentary/incomplete work, but that's mainly because since the end of the Coronavirus
-                        pandemic I have been relatively inconsistent in programming. However, I hope to advance my
-                        skills and make more complex projects combining web development and machine learning. Stay tuned
-                        for the next few months - I have too many project ideas and I cannot wait to (hopefully, within
-                        reason) develop them!<br>
-                        <br> Some other things that I like to do other than programming:
-                        playing basketball & watching the NBA, working out, watching movies/TV shows, reading, hanging out with friends & listening to music.
+                    <p class="bodytext desc flex-item" data-aos="fade-right">Hello! My name is Joshua Saji, and I am
+                        currently attending the University of Wisconsin - Madison as a freshman computer science major.
+                        I was originally raised in the Bay Area, but moved to Maryland where I graduated high school in.
+                        <br><br> I am a curious & driven developer & designer of 8 years, always eager to learn about
+                        anything new to enhance my knowledge & skillsets. I am especially interested in the intersection
+                        of computer science & mathematics: deep learning & artificial intelligence, and its vast range
+                        of applications, including computer vision and natural language. I am also interested in
+                        business & entrepreneurship, and hope to use my technical skills to start my own big venture in
+                        tech in the future.<br> <br> </p>
+                    <p class="bodytext desc flex-item" data-aos="fade-left">Outside of programming, you may see me
+                        reading books (currently reading Elon Musk's biography by Walter Isaacson), playing
+                        basketball/watching the NBA (go Warriors!), cooking, hanging out with friends, jump rope,
+                        running, and anything self-improvement.
                     </p>
                 </div>
             </div>
         </div>
         <div class="section third" id="work">
             <div class="body-content">
-                <div class="heading grid right" data-aos="fade-left">
+                <div class="heading grid right">
                     <p class="header desc">my work.</p>
                     <p class="header number">02</p>
                 </div>
-                <div class="inline-text" data-aos="fade-down">
-                    <p id="projectHeader">projects.</p><a id="seeMoreProjects">>> see more</a> 
-                </div>
-                <div class="project-container">
+                <div class="project-container work-section">
 
-                    <div class="flex" data-aos="fade-up">
-                        <div class="project">
+                    <p class="projectHeader" data-aos="fade-right">featured projects.</p>
+
+                    <div class="flex">
+                        <div class="project" data-aos="fade-right">
                             <h1 class="projectTitle">Linear Regression Visualizer</h1>
-                            <p>MAR 2024</p>
+                            <p class="projectTools">html/css/javascript</p>
                             <div class="project-body">
-                                <p>a web application that visually depicts the functionalities of linear regression.
+                                <p class="projectDesc">a web application that visually depicts the functionalities of
+                                    linear regression.
                                     built with html/css/javascript.</p>
-                                <div class="inline-text">
-                                    <a href="projects/Linear Regression/index.html" class="project">>> GO TO PROJECT</a>
-                                    <!-- <a href="" class="post">>> GO TO POST</a> -->
-                                </div>
+                                <a href="projects/Linear Regression/index.html" class="projectLink">>> access
+                                    project</a>
                             </div>
                         </div>
-                        <div class="project">
-                            <h1 class="projectTitle">Spotify Mood Analysis</h1>
-                            <p>APR-JUN 2024</p>
+                        <div class="project" data-aos="fade-left">
+                            <h1 class="projectTitle">Basketball Jump Shot Analysis</h1>
+                            <p class="projectTools">n/a</p>
                             <div class="project-body">
-                                <p>in development!</p>
-                                <!-- <div class="inline-text">
-                                    <a href="projects/nn-viz/index.html" class="project">>> GO TO PROJECT</a>
+                                <p class="projectDesc">in development!</p>
+                            </div>
+                        </div>
 
-                                    <a href="" class="post">>> GO TO POST</a>
-                                </div> -->
-                            </div>
-                        </div>
-                        
                     </div>
-                    <div class="flex" data-aos="fade-up">
+                    
+                </div>
+
+                <div class="blog-container work-section">
+
+                    <p class="projectHeader" data-aos="fade-left" class="right">featured blog posts.</p>
+
+                    <div class="flex" data-aos="fade-down">
                         <div class="project">
-                            <h1 class="projectTitle">Smyror</h1>
-                            <p>circa. NOV 2020</p>
+                            <h1 class="projectTitle">a gentle intro to linear regression</h1>
+                            <p class="topic">ml/ai</p>
                             <div class="project-body">
-                                <p>a smart mirror I built with a raspberry pi during the pandemic.</p>
-                                <div class="inline-text">
-                                    <a href="" class="post">post coming soon!</a>
-                                </div>
+                                <p class="projectDesc">coming soon!</p>
                             </div>
                         </div>
                         <div class="project">
-                            <p class="header">more projects coming soon!</p>
-                            <!-- <p>circa. NOV 2020</p>
+                            <h1 class="projectTitle">the boring life is the best life</h1>
+                            <p class="topic">lifestyle, self-improvement</p>
                             <div class="project-body">
-                                <p>a smart mirror I built with a raspberry pi during the pandemic.</p>
-                                <div class="inline-text">
-                                    <a href="" class="post">post coming soon!</a>
-                                </div>
-                            </div> -->
+                                <p class="projectDesc">coming soon!</p>
+                            </div>
                         </div>
+
                     </div>
 
                 </div>
@@ -146,7 +191,9 @@
                 </div>
                 <p class="bodytext desc" data-aos="fade-up">questions? up to collab? wanna say hi? don’t hesitate to
                     reach out!</p>
-                <p data-aos="fade-up"><a href="mailto:the.joshua.saji@gmail.com"><i class="fa-solid fa-envelope"></i></a> | <a href="https://github.com/Stylos21" target="_blank"><i class="fa-brands fa-github"></i></a></p>
+                <p data-aos="fade-up"><a class="icon" href="mailto:the.joshua.saji@gmail.com"><i
+                            class="fa-solid fa-envelope"></i></a> | <a class="icon" href="https://github.com/Stylos21"
+                        target="_blank"><i class="fa-brands fa-github"></i></a></p>
             </div>
         </div>
     </div>
