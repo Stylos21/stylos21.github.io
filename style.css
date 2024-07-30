@@ -589,13 +589,13 @@ p.projectDesc {
     .second .left {
         position:relative;
         left:50%;
-        transform:translateX(-25%);
+/*         transform:translateX(-25%); */
     }
 
     .third .right {
         position:relative;
         right:50%;
-        transform:translateX(25%);
+/*         transform:translateX(25%); */
     }
 
     .header {
